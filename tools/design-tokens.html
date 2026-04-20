@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Tokens Reference</title>
+  <style>
+/* Auto-generated — do not edit. Run: npm run sync-tokens */
+/**
+ * Auto-generated CSS Custom Properties
+ * DO NOT EDIT DIRECTLY - Run `npm run sync-tokens` to regenerate
+ *
+ * Generated: 2026-02-16
+ * Source: tailwind-theme.js
+ */
+
+:root {
+  /* Brand Colors */
+  --color-subway-green: #068332;
+  --color-spinach: #03421c;
+  --color-subway-yellow: #febc11;
+  --color-lettuce: #A1D402;
+
+  /* Semantic Colors */
+  --color-primary: #068332;
+  --color-primary-hover: #03421c;
+  --color-secondary: #febc11;
+  --color-secondary-hover: #d4a00f;
+
+  /* Neutral Colors */
+  --color-neutral-light-cream: #FFF6E9;
+  --color-neutral-dark-cream: #F8EAD8;
+  --color-neutral-light-spinach: #2B6040;
+  --color-neutral-lightest-spinach: #E6E4CF;
+  --color-neutral-light-grey: #EBE3D9;
+  --color-neutral-grey-light: #F4F4F4;
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #0E0E0E;
+
+  /* Button Colors */
+  --color-btn-filled-rest: #068332;
+  --color-btn-filled-hover: #03421C;
+  --color-btn-filled-pressed: #2B6040;
+  --color-btn-filled-text: #FFF6E9;
+  --color-btn-outlined-rest: #068332;
+  --color-btn-outlined-hover: #068332;
+  --color-btn-outlined-text-rest: #068332;
+  --color-btn-outlined-text-hover: #FFF6E9;
+  --color-btn-special-rest: #FFCB05;
+  --color-btn-special-hover: #E6B800;
+  --color-btn-special-pressed: #CCA300;
+  --color-btn-special-text: #000000;
+  --color-btn-focus-ring: #0052DE;
+
+  /* Feedback Colors */
+  --color-error: #B00000;
+  --color-success: #068332;
+  --color-caution: #FEBC11;
+  --color-system: #126AED;
+
+  /* Spacing Scale (8px base unit) */
+  --spacing-0: 0px;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 1.75rem;
+  --spacing-8: 2rem;
+  --spacing-9: 2.25rem;
+  --spacing-10: 2.5rem;
+  --spacing-11: 2.75rem;
+  --spacing-12: 3rem;
+  --spacing-14: 3.5rem;
+  --spacing-15: 3.75rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-25: 6.25rem;
+  --spacing-28: 7rem;
+  --spacing-32: 8rem;
+  --spacing-36: 9rem;
+  --spacing-40: 10rem;
+  --spacing-44: 11rem;
+  --spacing-48: 12rem;
+  --spacing-52: 13rem;
+  --spacing-56: 14rem;
+  --spacing-60: 15rem;
+  --spacing-64: 16rem;
+  --spacing-72: 18rem;
+  --spacing-80: 20rem;
+  --spacing-96: 24rem;
+  --spacing-px: 1px;
+  --spacing-0-5: 0.125rem;
+  --spacing-1-5: 0.375rem;
+  --spacing-2-5: 0.625rem;
+  --spacing-3-5: 0.875rem;
+  --spacing-17-5: 4.375rem;
+  --spacing-section-sm: 3rem;
+  --spacing-section-md: 4rem;
+  --spacing-section-lg: 6rem;
+  --spacing-section-xl: 8rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-gutter-md: 1.5rem;
+  --spacing-gutter-lg: 2rem;
+
+  /* Box Shadows */
+  --shadow-drop-5: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  --shadow-drop-10: 0 4px 8px rgba(0, 0, 0, 0.10);
+  --shadow-drop-15: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  --shadow-drop-25: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  --shadow-lg-bottom: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-md-bottom: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-sm-bottom: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-lg-top: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-md-top: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-sm-top: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  --shadow-inner-lg: inset 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  --shadow-focus-ring: 0 0 0 3px rgba(0, 137, 56, 0.4);
+  --shadow-focus-ring-error: 0 0 0 3px rgba(211, 47, 47, 0.4);
+  --shadow-none: none;
+
+  /* Border Radius */
+  --radius-none: 0px;
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+  --radius-button: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-modal: 1rem;
+  --radius-pill: 9999px;
+
+  /* Font Families */
+  --font-sans: Subway Sans, Subway Sans Fallback, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+  --font-sans-condensed: Subway Sans Condensed, Subway Sans Condensed Fallback, Subway Sans, system-ui, sans-serif;
+  --font-sans-extended: Subway Sans Extended, Subway Sans Fallback, Subway Sans, system-ui, sans-serif;
+  --font-mono: SF Mono, Monaco, Inconsolata, Fira Mono, Droid Sans Mono, monospace;
+  --font-serif: Georgia, Cambria, Times New Roman, Times, serif;
+
+  /* Typography */
+  --text-h1-size: 4.5rem;
+  --text-h1-line-height: 1;
+  --text-h1-weight: 500;
+  --text-h1-spacing: -0.04em;
+  --text-h1-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h2-size: 4rem;
+  --text-h2-line-height: 1;
+  --text-h2-weight: 500;
+  --text-h2-spacing: -0.03em;
+  --text-h2-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h3-size: 2.5rem;
+  --text-h3-line-height: 1.1;
+  --text-h3-weight: 500;
+  --text-h3-spacing: -0.02em;
+  --text-h3-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h4-size: 2rem;
+  --text-h4-line-height: 1.1;
+  --text-h4-weight: 500;
+  --text-h4-spacing: -0.01em;
+  --text-h4-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h5-size: 1.5rem;
+  --text-h5-line-height: 1.2;
+  --text-h5-weight: 500;
+  --text-h5-spacing: -0.01em;
+  --text-h5-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h6-size: 1.25rem;
+  --text-h6-line-height: 1.2;
+  --text-h6-weight: 500;
+  --text-h6-spacing: -0.01em;
+  --text-h6-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h1-mobile-size: 3.25rem;
+  --text-h1-mobile-line-height: 1;
+  --text-h1-mobile-weight: 500;
+  --text-h1-mobile-spacing: -0.04em;
+  --text-h1-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h2-mobile-size: 2.5rem;
+  --text-h2-mobile-line-height: 1;
+  --text-h2-mobile-weight: 500;
+  --text-h2-mobile-spacing: -0.03em;
+  --text-h2-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h3-mobile-size: 2rem;
+  --text-h3-mobile-line-height: 1.1;
+  --text-h3-mobile-weight: 500;
+  --text-h3-mobile-spacing: -0.02em;
+  --text-h3-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h4-mobile-size: 1.25rem;
+  --text-h4-mobile-line-height: 1.1;
+  --text-h4-mobile-weight: 500;
+  --text-h4-mobile-spacing: -0.01em;
+  --text-h4-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h5-mobile-size: 1.375rem;
+  --text-h5-mobile-line-height: 1.2;
+  --text-h5-mobile-weight: 500;
+  --text-h5-mobile-spacing: -0.01em;
+  --text-h5-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-h6-mobile-size: 1.125rem;
+  --text-h6-mobile-line-height: 1.2;
+  --text-h6-mobile-weight: 500;
+  --text-h6-mobile-spacing: 0;
+  --text-h6-mobile-font: Subway Sans, Subway Sans Fallback, sans-serif;
+  --text-display-1-size: 9.25rem;
+  --text-display-1-line-height: 1;
+  --text-display-1-weight: 500;
+  --text-display-1-spacing: -0.06em;
+  --text-display-2-size: 7.5rem;
+  --text-display-2-line-height: 1;
+  --text-display-2-weight: 500;
+  --text-display-2-spacing: -0.05em;
+  --text-body-lg-size: 1rem;
+  --text-body-lg-line-height: 1.2;
+  --text-body-lg-weight: 500;
+  --text-body-lg-spacing: -0.02em;
+  --text-body-md-size: 0.875rem;
+  --text-body-md-line-height: 1.3;
+  --text-body-md-weight: 500;
+  --text-body-sm-size: 0.75rem;
+  --text-body-sm-line-height: 1.3;
+  --text-body-sm-weight: 400;
+  --text-body-sm-spacing: -0.02em;
+  --text-body-sm-emphasis-size: 0.75rem;
+  --text-body-sm-emphasis-line-height: 1.3;
+  --text-body-sm-emphasis-weight: 500;
+  --text-body-sm-emphasis-spacing: -0.02em;
+  --text-cta-size: 1rem;
+  --text-cta-line-height: 1.3;
+  --text-cta-weight: 600;
+  --text-cta-spacing: -0.015em;
+  --text-tag-size: 0.75rem;
+  --text-tag-line-height: 1;
+  --text-tag-weight: 700;
+  --text-tag-font: Subway Sans Condensed, Subway Sans Condensed Fallback, sans-serif;
+  --text-metadata-size: 0.625rem;
+  --text-metadata-line-height: 1.3;
+  --text-metadata-weight: 400;
+  --text-metadata-spacing: -0.02em;
+  --text-metadata-emphasis-size: 0.625rem;
+  --text-metadata-emphasis-line-height: 1.3;
+  --text-metadata-emphasis-weight: 500;
+  --text-metadata-emphasis-spacing: -0.02em;
+  --text-display-1-mobile-size: 4rem;
+  --text-display-1-mobile-line-height: 1;
+  --text-display-1-mobile-weight: 500;
+  --text-display-1-mobile-spacing: -0.05em;
+  --text-display-2-mobile-size: 3.25rem;
+  --text-display-2-mobile-line-height: 1;
+  --text-display-2-mobile-weight: 500;
+  --text-display-2-mobile-spacing: -0.04em;
+  --text-body-lg-mobile-size: 1rem;
+  --text-body-lg-mobile-line-height: 1.2;
+  --text-body-lg-mobile-weight: 500;
+  --text-body-lg-mobile-spacing: -0.02em;
+  --text-body-md-mobile-size: 0.875rem;
+  --text-body-md-mobile-line-height: 1.3;
+  --text-body-md-mobile-weight: 500;
+  --text-body-md-mobile-spacing: -0.02em;
+  --text-body-sm-mobile-size: 0.75rem;
+  --text-body-sm-mobile-line-height: 1.3;
+  --text-body-sm-mobile-weight: 400;
+  --text-body-sm-mobile-spacing: -0.02em;
+  --text-body-sm-emphasis-mobile-size: 0.75rem;
+  --text-body-sm-emphasis-mobile-line-height: 1.3;
+  --text-body-sm-emphasis-mobile-weight: 500;
+  --text-body-sm-emphasis-mobile-spacing: -0.02em;
+  --text-cta-mobile-size: 1rem;
+  --text-cta-mobile-line-height: 1.3;
+  --text-cta-mobile-weight: 600;
+  --text-cta-mobile-spacing: -0.015em;
+  --text-tag-mobile-size: 0.75rem;
+  --text-tag-mobile-line-height: 1;
+  --text-tag-mobile-weight: 700;
+  --text-tag-mobile-font: Subway Sans Condensed, Subway Sans Condensed Fallback, sans-serif;
+  --text-metadata-mobile-size: 0.625rem;
+  --text-metadata-mobile-line-height: 1.3;
+  --text-metadata-mobile-weight: 400;
+  --text-metadata-mobile-spacing: -0.02em;
+  --text-metadata-emphasis-mobile-size: 0.625rem;
+  --text-metadata-emphasis-mobile-line-height: 1.3;
+  --text-metadata-emphasis-mobile-weight: 500;
+  --text-metadata-emphasis-mobile-spacing: -0.03em;
+  --text-app-h1-size: 3.25rem;
+  --text-app-h1-line-height: 1;
+  --text-app-h1-weight: 500;
+  --text-app-h1-spacing: -0.05em;
+  --text-app-h1-font: Subway Sans LCG App, Subway Sans, sans-serif;
+  --text-app-h2-size: 2.5rem;
+  --text-app-h2-line-height: 1;
+  --text-app-h2-weight: 500;
+  --text-app-h2-spacing: -0.05em;
+  --text-app-h2-font: Subway Sans LCG App, Subway Sans, sans-serif;
+  --text-app-h3-size: 2rem;
+  --text-app-h3-line-height: 1;
+  --text-app-h3-weight: 500;
+  --text-app-h3-spacing: -0.04em;
+  --text-app-h3-font: Subway Sans LCG App, Subway Sans, sans-serif;
+  --text-app-h4-size: 1.25rem;
+  --text-app-h4-line-height: 1.12;
+  --text-app-h4-weight: 500;
+  --text-app-h4-spacing: -0.03em;
+  --text-app-body-lg-size: 1rem;
+  --text-app-body-lg-line-height: 1.2;
+  --text-app-body-lg-weight: 500;
+  --text-app-body-lg-spacing: -0.02em;
+  --text-app-body-md-size: 0.875rem;
+  --text-app-body-md-line-height: 1.3;
+  --text-app-body-md-weight: 500;
+  --text-app-body-md-spacing: -0.02em;
+  --text-app-body-sm-size: 0.75rem;
+  --text-app-body-sm-line-height: 1.3;
+  --text-app-body-sm-weight: 400;
+  --text-app-body-sm-spacing: -0.02em;
+  --text-app-body-sm-emphasis-size: 0.75rem;
+  --text-app-body-sm-emphasis-line-height: 1.3;
+  --text-app-body-sm-emphasis-weight: 500;
+  --text-app-body-sm-emphasis-spacing: -0.02em;
+  --text-app-cta-size: 1rem;
+  --text-app-cta-line-height: 1.12;
+  --text-app-cta-weight: 600;
+  --text-app-cta-spacing: -0.03em;
+  --text-app-tag-size: 0.75rem;
+  --text-app-tag-line-height: 1;
+  --text-app-tag-weight: 700;
+  --text-app-tag-font: Subway Sans Condensed, Subway Sans Condensed Fallback, sans-serif;
+  --text-app-metadata-size: 0.625rem;
+  --text-app-metadata-line-height: 1.3;
+  --text-app-metadata-weight: 400;
+  --text-app-metadata-spacing: -0.02em;
+  --text-app-metadata-emphasis-size: 0.625rem;
+  --text-app-metadata-emphasis-line-height: 1.3;
+  --text-app-metadata-emphasis-weight: 500;
+  --text-app-metadata-emphasis-spacing: -0.03em;
+
+  /* Breakpoints (for reference) */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+}
+
+/* Page layout */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  background: #f9f9f9;
+  color: #1a1a1a;
+  line-height: 1.5;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+h2 {
+  font-size: 1.25rem; font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e5e5;
+}
+.subtitle { color: #666; margin-bottom: 2rem; }
+.grid { display: grid; gap: 1rem; }
+.grid-colors { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+.grid-shadows { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+
+.swatch { border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.swatch-color { height: 80px; display: flex; align-items: flex-end; padding: 0.5rem; }
+.swatch-color span { font-size: 0.7rem; font-weight: 600; padding: 2px 6px; border-radius: 4px; }
+.swatch-info { padding: 0.5rem 0.75rem; }
+.swatch-name { font-size: 0.8rem; font-weight: 600; }
+.swatch-var { font-size: 0.7rem; color: #888; font-family: monospace; cursor: pointer; }
+.swatch-var:hover { color: #333; }
+
+.type-sample {
+  background: #fff; border-radius: 8px; padding: 1.25rem; margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06); display: flex; align-items: baseline; gap: 1rem;
+}
+.type-sample-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.type-meta {
+  font-size: 0.7rem; color: #999; font-family: monospace;
+  white-space: nowrap; text-align: right; min-width: 200px;
+}
+
+.shadow-card {
+  background: #fff; border-radius: 12px; padding: 1.5rem; min-height: 100px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.shadow-name { font-size: 0.85rem; font-weight: 600; }
+.shadow-value { font-size: 0.65rem; color: #999; font-family: monospace; margin-top: 0.25rem; text-align: center; }
+
+.radius-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-end; }
+.radius-sample {
+  width: 80px; height: 80px; background: #068332;
+  display: flex; align-items: center; justify-content: center;
+}
+.radius-label { font-size: 0.7rem; color: #fff; font-weight: 600; text-align: center; }
+.radius-caption { text-align: center; font-size: 0.7rem; color: #888; font-family: monospace; margin-top: 0.25rem; }
+
+.spacing-container {
+  background: #fff; border-radius: 8px; padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.spacing-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
+.spacing-bar { height: 24px; background: #068332; border-radius: 4px; opacity: 0.7; }
+.spacing-label { font-size: 0.75rem; font-family: monospace; color: #666; min-width: 180px; }
+
+nav {
+  background: #fff; padding: 1rem; border-radius: 8px;
+  margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+nav a {
+  display: inline-block; margin: 0.25rem 0.5rem; color: #068332;
+  text-decoration: none; font-size: 0.85rem; font-weight: 500;
+}
+nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<h1>Design Tokens</h1>
+<p class="subtitle">Auto-generated from <code>tailwind-theme.js</code> — run <code>npm run sync-tokens</code> to regenerate</p>
+
+<nav>
+  <strong>Jump to:</strong>
+  <a href="#brand">Brand Colors</a>
+    <a href="#neutral">Neutral Colors</a>
+    <a href="#feedback">Feedback Colors</a>
+    <a href="#buttons">Button Colors</a>
+    <a href="#semantic">Semantic Colors</a>
+    <a href="#headings-desktop-">Headings (Desktop)</a>
+    <a href="#headings-mobile-">Headings (Mobile)</a>
+    <a href="#display">Display</a>
+    <a href="#body">Body</a>
+    <a href="#cta-tag-metadata">CTA / Tag / Metadata</a>
+    <a href="#app-typography">App Typography</a>
+    <a href="#other">Other</a>
+    <a href="#fonts">Font Families</a>
+    <a href="#shadows">Box Shadows</a>
+    <a href="#radius">Border Radius</a>
+    <a href="#spacing">Spacing</a>
+</nav>
+
+<h2 id="brand">Brand Colors</h2>
+<div class="grid grid-colors">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-subway-green);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Subway Green</div>
+      <div class="swatch-var">--color-subway-green</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-spinach);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#03421c</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Spinach</div>
+      <div class="swatch-var">--color-spinach</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-subway-yellow); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#febc11</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Subway Yellow</div>
+      <div class="swatch-var">--color-subway-yellow</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-lettuce); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#A1D402</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Lettuce</div>
+      <div class="swatch-var">--color-lettuce</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="neutral">Neutral Colors</h2>
+<div class="grid grid-colors">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-light-cream); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#FFF6E9</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Light Cream</div>
+      <div class="swatch-var">--color-neutral-light-cream</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-dark-cream); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#F8EAD8</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Dark Cream</div>
+      <div class="swatch-var">--color-neutral-dark-cream</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-light-spinach);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#2B6040</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Light Spinach</div>
+      <div class="swatch-var">--color-neutral-light-spinach</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-lightest-spinach); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#E6E4CF</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Lightest Spinach</div>
+      <div class="swatch-var">--color-neutral-lightest-spinach</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-light-grey); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#EBE3D9</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Light Grey</div>
+      <div class="swatch-var">--color-neutral-light-grey</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-grey-light); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#F4F4F4</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Grey Light</div>
+      <div class="swatch-var">--color-neutral-grey-light</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-white); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#ffffff</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">White</div>
+      <div class="swatch-var">--color-neutral-white</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-neutral-black);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#0E0E0E</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Black</div>
+      <div class="swatch-var">--color-neutral-black</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="feedback">Feedback Colors</h2>
+<div class="grid grid-colors">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-error);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#B00000</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Error</div>
+      <div class="swatch-var">--color-error</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-success);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Success</div>
+      <div class="swatch-var">--color-success</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-caution); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#FEBC11</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Caution</div>
+      <div class="swatch-var">--color-caution</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-system);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#126AED</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">System</div>
+      <div class="swatch-var">--color-system</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="buttons">Button Colors</h2>
+<div class="grid grid-colors">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-filled-rest);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Filled Rest</div>
+      <div class="swatch-var">--color-btn-filled-rest</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-filled-hover);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#03421C</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Filled Hover</div>
+      <div class="swatch-var">--color-btn-filled-hover</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-filled-pressed);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#2B6040</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Filled Pressed</div>
+      <div class="swatch-var">--color-btn-filled-pressed</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-filled-text); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#FFF6E9</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Filled Text</div>
+      <div class="swatch-var">--color-btn-filled-text</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-outlined-rest);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Outlined Rest</div>
+      <div class="swatch-var">--color-btn-outlined-rest</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-outlined-hover);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Outlined Hover</div>
+      <div class="swatch-var">--color-btn-outlined-hover</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-outlined-text-rest);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Outlined Text Rest</div>
+      <div class="swatch-var">--color-btn-outlined-text-rest</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-outlined-text-hover); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#FFF6E9</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Outlined Text Hover</div>
+      <div class="swatch-var">--color-btn-outlined-text-hover</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-special-rest); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#FFCB05</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Special Rest</div>
+      <div class="swatch-var">--color-btn-special-rest</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-special-hover); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#E6B800</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Special Hover</div>
+      <div class="swatch-var">--color-btn-special-hover</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-special-pressed);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#CCA300</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Special Pressed</div>
+      <div class="swatch-var">--color-btn-special-pressed</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-special-text);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#000000</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Special Text</div>
+      <div class="swatch-var">--color-btn-special-text</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-btn-focus-ring);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#0052DE</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Btn Focus Ring</div>
+      <div class="swatch-var">--color-btn-focus-ring</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="semantic">Semantic Colors</h2>
+<div class="grid grid-colors">
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-primary);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#068332</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Primary</div>
+      <div class="swatch-var">--color-primary</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-primary-hover);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#03421c</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Primary Hover</div>
+      <div class="swatch-var">--color-primary-hover</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-secondary); border: 1px solid #ddd;">
+      <span style="color: #333; background: rgba(255,255,255,0.85); color: #333;">#febc11</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Secondary</div>
+      <div class="swatch-var">--color-secondary</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background: var(--color-secondary-hover);">
+      <span style="color: #fff; background: rgba(255,255,255,0.85); color: #333;">#d4a00f</span>
+    </div>
+    <div class="swatch-info">
+      <div class="swatch-name">Secondary Hover</div>
+      <div class="swatch-var">--color-secondary-hover</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="headings-desktop-">Typography — Headings (Desktop)</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h1-size); line-height: var(--text-h1-line-height); font-weight: var(--text-h1-weight); letter-spacing: var(--text-h1-spacing); font-family: var(--text-h1-font)">
+      The quick brown fox — h1
+    </div>
+    <div class="type-meta">--text-h1-size: 4.5rem<br>4.5rem · w500 · -0.04em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h2-size); line-height: var(--text-h2-line-height); font-weight: var(--text-h2-weight); letter-spacing: var(--text-h2-spacing); font-family: var(--text-h2-font)">
+      The quick brown fox — h2
+    </div>
+    <div class="type-meta">--text-h2-size: 4rem<br>4rem · w500 · -0.03em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h3-size); line-height: var(--text-h3-line-height); font-weight: var(--text-h3-weight); letter-spacing: var(--text-h3-spacing); font-family: var(--text-h3-font)">
+      The quick brown fox — h3
+    </div>
+    <div class="type-meta">--text-h3-size: 2.5rem<br>2.5rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h4-size); line-height: var(--text-h4-line-height); font-weight: var(--text-h4-weight); letter-spacing: var(--text-h4-spacing); font-family: var(--text-h4-font)">
+      The quick brown fox — h4
+    </div>
+    <div class="type-meta">--text-h4-size: 2rem<br>2rem · w500 · -0.01em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h5-size); line-height: var(--text-h5-line-height); font-weight: var(--text-h5-weight); letter-spacing: var(--text-h5-spacing); font-family: var(--text-h5-font)">
+      The quick brown fox — h5
+    </div>
+    <div class="type-meta">--text-h5-size: 1.5rem<br>1.5rem · w500 · -0.01em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h6-size); line-height: var(--text-h6-line-height); font-weight: var(--text-h6-weight); letter-spacing: var(--text-h6-spacing); font-family: var(--text-h6-font)">
+      The quick brown fox — h6
+    </div>
+    <div class="type-meta">--text-h6-size: 1.25rem<br>1.25rem · w500 · -0.01em</div>
+  </div>
+
+<h2 id="headings-mobile-">Typography — Headings (Mobile)</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h1-mobile-size); line-height: var(--text-h1-mobile-line-height); font-weight: var(--text-h1-mobile-weight); letter-spacing: var(--text-h1-mobile-spacing); font-family: var(--text-h1-mobile-font)">
+      The quick brown fox — h1-mobile
+    </div>
+    <div class="type-meta">--text-h1-mobile-size: 3.25rem<br>3.25rem · w500 · -0.04em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h2-mobile-size); line-height: var(--text-h2-mobile-line-height); font-weight: var(--text-h2-mobile-weight); letter-spacing: var(--text-h2-mobile-spacing); font-family: var(--text-h2-mobile-font)">
+      The quick brown fox — h2-mobile
+    </div>
+    <div class="type-meta">--text-h2-mobile-size: 2.5rem<br>2.5rem · w500 · -0.03em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h3-mobile-size); line-height: var(--text-h3-mobile-line-height); font-weight: var(--text-h3-mobile-weight); letter-spacing: var(--text-h3-mobile-spacing); font-family: var(--text-h3-mobile-font)">
+      The quick brown fox — h3-mobile
+    </div>
+    <div class="type-meta">--text-h3-mobile-size: 2rem<br>2rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h4-mobile-size); line-height: var(--text-h4-mobile-line-height); font-weight: var(--text-h4-mobile-weight); letter-spacing: var(--text-h4-mobile-spacing); font-family: var(--text-h4-mobile-font)">
+      The quick brown fox — h4-mobile
+    </div>
+    <div class="type-meta">--text-h4-mobile-size: 1.25rem<br>1.25rem · w500 · -0.01em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h5-mobile-size); line-height: var(--text-h5-mobile-line-height); font-weight: var(--text-h5-mobile-weight); letter-spacing: var(--text-h5-mobile-spacing); font-family: var(--text-h5-mobile-font)">
+      The quick brown fox — h5-mobile
+    </div>
+    <div class="type-meta">--text-h5-mobile-size: 1.375rem<br>1.375rem · w500 · -0.01em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-h6-mobile-size); line-height: var(--text-h6-mobile-line-height); font-weight: var(--text-h6-mobile-weight); letter-spacing: var(--text-h6-mobile-spacing); font-family: var(--text-h6-mobile-font)">
+      The quick brown fox — h6-mobile
+    </div>
+    <div class="type-meta">--text-h6-mobile-size: 1.125rem<br>1.125rem · w500 · 0</div>
+  </div>
+
+<h2 id="display">Typography — Display</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-display-1-size); line-height: var(--text-display-1-line-height); font-weight: var(--text-display-1-weight); letter-spacing: var(--text-display-1-spacing)">
+      DISPLAY 1
+    </div>
+    <div class="type-meta">--text-display-1-size: 9.25rem<br>9.25rem · w500 · -0.06em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-display-2-size); line-height: var(--text-display-2-line-height); font-weight: var(--text-display-2-weight); letter-spacing: var(--text-display-2-spacing)">
+      DISPLAY 2
+    </div>
+    <div class="type-meta">--text-display-2-size: 7.5rem<br>7.5rem · w500 · -0.05em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-display-1-mobile-size); line-height: var(--text-display-1-mobile-line-height); font-weight: var(--text-display-1-mobile-weight); letter-spacing: var(--text-display-1-mobile-spacing)">
+      DISPLAY 1-MOBILE
+    </div>
+    <div class="type-meta">--text-display-1-mobile-size: 4rem<br>4rem · w500 · -0.05em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-display-2-mobile-size); line-height: var(--text-display-2-mobile-line-height); font-weight: var(--text-display-2-mobile-weight); letter-spacing: var(--text-display-2-mobile-spacing)">
+      DISPLAY 2-MOBILE
+    </div>
+    <div class="type-meta">--text-display-2-mobile-size: 3.25rem<br>3.25rem · w500 · -0.04em</div>
+  </div>
+
+<h2 id="body">Typography — Body</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-lg-size); line-height: var(--text-body-lg-line-height); font-weight: var(--text-body-lg-weight); letter-spacing: var(--text-body-lg-spacing)">
+      The quick brown fox — body-lg
+    </div>
+    <div class="type-meta">--text-body-lg-size: 1rem<br>1rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-md-size); line-height: var(--text-body-md-line-height); font-weight: var(--text-body-md-weight)">
+      The quick brown fox — body-md
+    </div>
+    <div class="type-meta">--text-body-md-size: 0.875rem<br>0.875rem · w500</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-sm-size); line-height: var(--text-body-sm-line-height); font-weight: var(--text-body-sm-weight); letter-spacing: var(--text-body-sm-spacing)">
+      The quick brown fox — body-sm
+    </div>
+    <div class="type-meta">--text-body-sm-size: 0.75rem<br>0.75rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-sm-emphasis-size); line-height: var(--text-body-sm-emphasis-line-height); font-weight: var(--text-body-sm-emphasis-weight); letter-spacing: var(--text-body-sm-emphasis-spacing)">
+      The quick brown fox — body-sm-emphasis
+    </div>
+    <div class="type-meta">--text-body-sm-emphasis-size: 0.75rem<br>0.75rem · w500 · -0.02em</div>
+  </div>
+
+<h2 id="cta-tag-metadata">Typography — CTA / Tag / Metadata</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-cta-size); line-height: var(--text-cta-line-height); font-weight: var(--text-cta-weight); letter-spacing: var(--text-cta-spacing)">
+      The quick brown fox — cta
+    </div>
+    <div class="type-meta">--text-cta-size: 1rem<br>1rem · w600 · -0.015em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-tag-size); line-height: var(--text-tag-line-height); font-weight: var(--text-tag-weight); font-family: var(--text-tag-font)">
+      The quick brown fox — tag
+    </div>
+    <div class="type-meta">--text-tag-size: 0.75rem<br>0.75rem · w700</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-metadata-size); line-height: var(--text-metadata-line-height); font-weight: var(--text-metadata-weight); letter-spacing: var(--text-metadata-spacing)">
+      The quick brown fox — metadata
+    </div>
+    <div class="type-meta">--text-metadata-size: 0.625rem<br>0.625rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-metadata-emphasis-size); line-height: var(--text-metadata-emphasis-line-height); font-weight: var(--text-metadata-emphasis-weight); letter-spacing: var(--text-metadata-emphasis-spacing)">
+      The quick brown fox — metadata-emphasis
+    </div>
+    <div class="type-meta">--text-metadata-emphasis-size: 0.625rem<br>0.625rem · w500 · -0.02em</div>
+  </div>
+
+<h2 id="app-typography">Typography — App Typography</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-h1-size); line-height: var(--text-app-h1-line-height); font-weight: var(--text-app-h1-weight); letter-spacing: var(--text-app-h1-spacing); font-family: var(--text-app-h1-font)">
+      The quick brown fox — app-h1
+    </div>
+    <div class="type-meta">--text-app-h1-size: 3.25rem<br>3.25rem · w500 · -0.05em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-h2-size); line-height: var(--text-app-h2-line-height); font-weight: var(--text-app-h2-weight); letter-spacing: var(--text-app-h2-spacing); font-family: var(--text-app-h2-font)">
+      The quick brown fox — app-h2
+    </div>
+    <div class="type-meta">--text-app-h2-size: 2.5rem<br>2.5rem · w500 · -0.05em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-h3-size); line-height: var(--text-app-h3-line-height); font-weight: var(--text-app-h3-weight); letter-spacing: var(--text-app-h3-spacing); font-family: var(--text-app-h3-font)">
+      The quick brown fox — app-h3
+    </div>
+    <div class="type-meta">--text-app-h3-size: 2rem<br>2rem · w500 · -0.04em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-h4-size); line-height: var(--text-app-h4-line-height); font-weight: var(--text-app-h4-weight); letter-spacing: var(--text-app-h4-spacing)">
+      The quick brown fox — app-h4
+    </div>
+    <div class="type-meta">--text-app-h4-size: 1.25rem<br>1.25rem · w500 · -0.03em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-body-lg-size); line-height: var(--text-app-body-lg-line-height); font-weight: var(--text-app-body-lg-weight); letter-spacing: var(--text-app-body-lg-spacing)">
+      The quick brown fox — app-body-lg
+    </div>
+    <div class="type-meta">--text-app-body-lg-size: 1rem<br>1rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-body-md-size); line-height: var(--text-app-body-md-line-height); font-weight: var(--text-app-body-md-weight); letter-spacing: var(--text-app-body-md-spacing)">
+      The quick brown fox — app-body-md
+    </div>
+    <div class="type-meta">--text-app-body-md-size: 0.875rem<br>0.875rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-body-sm-size); line-height: var(--text-app-body-sm-line-height); font-weight: var(--text-app-body-sm-weight); letter-spacing: var(--text-app-body-sm-spacing)">
+      The quick brown fox — app-body-sm
+    </div>
+    <div class="type-meta">--text-app-body-sm-size: 0.75rem<br>0.75rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-body-sm-emphasis-size); line-height: var(--text-app-body-sm-emphasis-line-height); font-weight: var(--text-app-body-sm-emphasis-weight); letter-spacing: var(--text-app-body-sm-emphasis-spacing)">
+      The quick brown fox — app-body-sm-emphasis
+    </div>
+    <div class="type-meta">--text-app-body-sm-emphasis-size: 0.75rem<br>0.75rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-cta-size); line-height: var(--text-app-cta-line-height); font-weight: var(--text-app-cta-weight); letter-spacing: var(--text-app-cta-spacing)">
+      The quick brown fox — app-cta
+    </div>
+    <div class="type-meta">--text-app-cta-size: 1rem<br>1rem · w600 · -0.03em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-tag-size); line-height: var(--text-app-tag-line-height); font-weight: var(--text-app-tag-weight); font-family: var(--text-app-tag-font)">
+      The quick brown fox — app-tag
+    </div>
+    <div class="type-meta">--text-app-tag-size: 0.75rem<br>0.75rem · w700</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-metadata-size); line-height: var(--text-app-metadata-line-height); font-weight: var(--text-app-metadata-weight); letter-spacing: var(--text-app-metadata-spacing)">
+      The quick brown fox — app-metadata
+    </div>
+    <div class="type-meta">--text-app-metadata-size: 0.625rem<br>0.625rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-app-metadata-emphasis-size); line-height: var(--text-app-metadata-emphasis-line-height); font-weight: var(--text-app-metadata-emphasis-weight); letter-spacing: var(--text-app-metadata-emphasis-spacing)">
+      The quick brown fox — app-metadata-emphasis
+    </div>
+    <div class="type-meta">--text-app-metadata-emphasis-size: 0.625rem<br>0.625rem · w500 · -0.03em</div>
+  </div>
+
+<h2 id="other">Typography — Other</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-lg-mobile-size); line-height: var(--text-body-lg-mobile-line-height); font-weight: var(--text-body-lg-mobile-weight); letter-spacing: var(--text-body-lg-mobile-spacing)">
+      The quick brown fox — body-lg-mobile
+    </div>
+    <div class="type-meta">--text-body-lg-mobile-size: 1rem<br>1rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-md-mobile-size); line-height: var(--text-body-md-mobile-line-height); font-weight: var(--text-body-md-mobile-weight); letter-spacing: var(--text-body-md-mobile-spacing)">
+      The quick brown fox — body-md-mobile
+    </div>
+    <div class="type-meta">--text-body-md-mobile-size: 0.875rem<br>0.875rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-sm-mobile-size); line-height: var(--text-body-sm-mobile-line-height); font-weight: var(--text-body-sm-mobile-weight); letter-spacing: var(--text-body-sm-mobile-spacing)">
+      The quick brown fox — body-sm-mobile
+    </div>
+    <div class="type-meta">--text-body-sm-mobile-size: 0.75rem<br>0.75rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-body-sm-emphasis-mobile-size); line-height: var(--text-body-sm-emphasis-mobile-line-height); font-weight: var(--text-body-sm-emphasis-mobile-weight); letter-spacing: var(--text-body-sm-emphasis-mobile-spacing)">
+      The quick brown fox — body-sm-emphasis-mobile
+    </div>
+    <div class="type-meta">--text-body-sm-emphasis-mobile-size: 0.75rem<br>0.75rem · w500 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-cta-mobile-size); line-height: var(--text-cta-mobile-line-height); font-weight: var(--text-cta-mobile-weight); letter-spacing: var(--text-cta-mobile-spacing)">
+      The quick brown fox — cta-mobile
+    </div>
+    <div class="type-meta">--text-cta-mobile-size: 1rem<br>1rem · w600 · -0.015em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-tag-mobile-size); line-height: var(--text-tag-mobile-line-height); font-weight: var(--text-tag-mobile-weight); font-family: var(--text-tag-mobile-font)">
+      The quick brown fox — tag-mobile
+    </div>
+    <div class="type-meta">--text-tag-mobile-size: 0.75rem<br>0.75rem · w700</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-metadata-mobile-size); line-height: var(--text-metadata-mobile-line-height); font-weight: var(--text-metadata-mobile-weight); letter-spacing: var(--text-metadata-mobile-spacing)">
+      The quick brown fox — metadata-mobile
+    </div>
+    <div class="type-meta">--text-metadata-mobile-size: 0.625rem<br>0.625rem · w400 · -0.02em</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-size: var(--text-metadata-emphasis-mobile-size); line-height: var(--text-metadata-emphasis-mobile-line-height); font-weight: var(--text-metadata-emphasis-mobile-weight); letter-spacing: var(--text-metadata-emphasis-mobile-spacing)">
+      The quick brown fox — metadata-emphasis-mobile
+    </div>
+    <div class="type-meta">--text-metadata-emphasis-mobile-size: 0.625rem<br>0.625rem · w500 · -0.03em</div>
+  </div>
+
+<h2 id="fonts">Font Families</h2>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-family: var(--font-sans); font-size: 1.25rem;">
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">--font-sans<br>Subway Sans, Subway Sans Fallback, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-family: var(--font-sans-condensed); font-size: 1.25rem;">
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">--font-sans-condensed<br>Subway Sans Condensed, Subway Sans Condensed Fallback, Subway Sans, system-ui, sans-serif</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-family: var(--font-sans-extended); font-size: 1.25rem;">
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">--font-sans-extended<br>Subway Sans Extended, Subway Sans Fallback, Subway Sans, system-ui, sans-serif</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-family: var(--font-mono); font-size: 1.25rem;">
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">--font-mono<br>SF Mono, Monaco, Inconsolata, Fira Mono, Droid Sans Mono, monospace</div>
+  </div>
+  <div class="type-sample">
+    <div class="type-sample-text" style="font-family: var(--font-serif); font-size: 1.25rem;">
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">--font-serif<br>Georgia, Cambria, Times New Roman, Times, serif</div>
+  </div>
+
+<h2 id="shadows">Box Shadows</h2>
+<div class="grid grid-shadows">
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-drop-5);">
+      <div class="shadow-name">drop-5</div>
+      <div class="shadow-value">--shadow-drop-5</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-drop-10);">
+      <div class="shadow-name">drop-10</div>
+      <div class="shadow-value">--shadow-drop-10</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-drop-15);">
+      <div class="shadow-name">drop-15</div>
+      <div class="shadow-value">--shadow-drop-15</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-drop-25);">
+      <div class="shadow-name">drop-25</div>
+      <div class="shadow-value">--shadow-drop-25</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-lg-bottom);">
+      <div class="shadow-name">lg-bottom</div>
+      <div class="shadow-value">--shadow-lg-bottom</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-md-bottom);">
+      <div class="shadow-name">md-bottom</div>
+      <div class="shadow-value">--shadow-md-bottom</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-sm-bottom);">
+      <div class="shadow-name">sm-bottom</div>
+      <div class="shadow-value">--shadow-sm-bottom</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-lg-top);">
+      <div class="shadow-name">lg-top</div>
+      <div class="shadow-value">--shadow-lg-top</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-md-top);">
+      <div class="shadow-name">md-top</div>
+      <div class="shadow-value">--shadow-md-top</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-sm-top);">
+      <div class="shadow-name">sm-top</div>
+      <div class="shadow-value">--shadow-sm-top</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-inner);">
+      <div class="shadow-name">inner</div>
+      <div class="shadow-value">--shadow-inner</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-inner-lg);">
+      <div class="shadow-name">inner-lg</div>
+      <div class="shadow-value">--shadow-inner-lg</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-focus-ring);">
+      <div class="shadow-name">focus-ring</div>
+      <div class="shadow-value">--shadow-focus-ring</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-focus-ring-error);">
+      <div class="shadow-name">focus-ring-error</div>
+      <div class="shadow-value">--shadow-focus-ring-error</div>
+    </div>
+  </div>
+  <div>
+    <div class="shadow-card" style="box-shadow: var(--shadow-none);">
+      <div class="shadow-name">none</div>
+      <div class="shadow-value">--shadow-none</div>
+    </div>
+  </div>
+</div>
+
+<h2 id="radius">Border Radius</h2>
+<div class="radius-grid">
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-none);">
+      <div class="radius-label">none</div>
+    </div>
+    <div class="radius-caption">--radius-none<br>0px</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-sm);">
+      <div class="radius-label">sm</div>
+    </div>
+    <div class="radius-caption">--radius-sm<br>0.125rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-DEFAULT);">
+      <div class="radius-label">DEFAULT</div>
+    </div>
+    <div class="radius-caption">--radius-DEFAULT<br>0.25rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-md);">
+      <div class="radius-label">md</div>
+    </div>
+    <div class="radius-caption">--radius-md<br>0.375rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-lg);">
+      <div class="radius-label">lg</div>
+    </div>
+    <div class="radius-caption">--radius-lg<br>0.5rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-xl);">
+      <div class="radius-label">xl</div>
+    </div>
+    <div class="radius-caption">--radius-xl<br>0.75rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-2xl);">
+      <div class="radius-label">2xl</div>
+    </div>
+    <div class="radius-caption">--radius-2xl<br>1rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-3xl);">
+      <div class="radius-label">3xl</div>
+    </div>
+    <div class="radius-caption">--radius-3xl<br>1.5rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-full);">
+      <div class="radius-label">full</div>
+    </div>
+    <div class="radius-caption">--radius-full<br>9999px</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-button);">
+      <div class="radius-label">button</div>
+    </div>
+    <div class="radius-caption">--radius-button<br>0.5rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-card);">
+      <div class="radius-label">card</div>
+    </div>
+    <div class="radius-caption">--radius-card<br>0.75rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-modal);">
+      <div class="radius-label">modal</div>
+    </div>
+    <div class="radius-caption">--radius-modal<br>1rem</div>
+  </div>
+  <div>
+    <div class="radius-sample" style="border-radius: var(--radius-pill);">
+      <div class="radius-label">pill</div>
+    </div>
+    <div class="radius-caption">--radius-pill<br>9999px</div>
+  </div>
+</div>
+
+<h2 id="spacing">Spacing</h2>
+<div class="spacing-container">
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-0 (0px)</div>
+    <div class="spacing-bar" style="width: 0px;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-1 (0.25rem)</div>
+    <div class="spacing-bar" style="width: 0.25rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-2 (0.5rem)</div>
+    <div class="spacing-bar" style="width: 0.5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-3 (0.75rem)</div>
+    <div class="spacing-bar" style="width: 0.75rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-4 (1rem)</div>
+    <div class="spacing-bar" style="width: 1rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-5 (1.25rem)</div>
+    <div class="spacing-bar" style="width: 1.25rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-6 (1.5rem)</div>
+    <div class="spacing-bar" style="width: 1.5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-7 (1.75rem)</div>
+    <div class="spacing-bar" style="width: 1.75rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-8 (2rem)</div>
+    <div class="spacing-bar" style="width: 2rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-9 (2.25rem)</div>
+    <div class="spacing-bar" style="width: 2.25rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-10 (2.5rem)</div>
+    <div class="spacing-bar" style="width: 2.5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-11 (2.75rem)</div>
+    <div class="spacing-bar" style="width: 2.75rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-12 (3rem)</div>
+    <div class="spacing-bar" style="width: 3rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-14 (3.5rem)</div>
+    <div class="spacing-bar" style="width: 3.5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-15 (3.75rem)</div>
+    <div class="spacing-bar" style="width: 3.75rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-16 (4rem)</div>
+    <div class="spacing-bar" style="width: 4rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-20 (5rem)</div>
+    <div class="spacing-bar" style="width: 5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-24 (6rem)</div>
+    <div class="spacing-bar" style="width: 6rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-25 (6.25rem)</div>
+    <div class="spacing-bar" style="width: 6.25rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-28 (7rem)</div>
+    <div class="spacing-bar" style="width: 7rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-32 (8rem)</div>
+    <div class="spacing-bar" style="width: 8rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-36 (9rem)</div>
+    <div class="spacing-bar" style="width: 9rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-40 (10rem)</div>
+    <div class="spacing-bar" style="width: 10rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-44 (11rem)</div>
+    <div class="spacing-bar" style="width: 11rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-48 (12rem)</div>
+    <div class="spacing-bar" style="width: 12rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-52 (13rem)</div>
+    <div class="spacing-bar" style="width: 13rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-56 (14rem)</div>
+    <div class="spacing-bar" style="width: 14rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-60 (15rem)</div>
+    <div class="spacing-bar" style="width: 15rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-64 (16rem)</div>
+    <div class="spacing-bar" style="width: 16rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-72 (18rem)</div>
+    <div class="spacing-bar" style="width: 18rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-80 (20rem)</div>
+    <div class="spacing-bar" style="width: 20rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-96 (24rem)</div>
+    <div class="spacing-bar" style="width: 24rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-px (1px)</div>
+    <div class="spacing-bar" style="width: 1px;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-0-5 (0.125rem)</div>
+    <div class="spacing-bar" style="width: 0.125rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-1-5 (0.375rem)</div>
+    <div class="spacing-bar" style="width: 0.375rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-2-5 (0.625rem)</div>
+    <div class="spacing-bar" style="width: 0.625rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-3-5 (0.875rem)</div>
+    <div class="spacing-bar" style="width: 0.875rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-17-5 (4.375rem)</div>
+    <div class="spacing-bar" style="width: 4.375rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-section-sm (3rem)</div>
+    <div class="spacing-bar" style="width: 3rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-section-md (4rem)</div>
+    <div class="spacing-bar" style="width: 4rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-section-lg (6rem)</div>
+    <div class="spacing-bar" style="width: 6rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-section-xl (8rem)</div>
+    <div class="spacing-bar" style="width: 8rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-gutter-sm (1rem)</div>
+    <div class="spacing-bar" style="width: 1rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-gutter-md (1.5rem)</div>
+    <div class="spacing-bar" style="width: 1.5rem;"></div>
+  </div>
+  <div class="spacing-row">
+    <div class="spacing-label">--spacing-gutter-lg (2rem)</div>
+    <div class="spacing-bar" style="width: 2rem;"></div>
+  </div>
+</div>
+
+<div style="height: 4rem;"></div>
+
+<script>
+// Click-to-copy variable names
+document.querySelectorAll('.swatch-var, .type-meta, .shadow-value, .radius-caption, .spacing-label').forEach(el => {
+  el.addEventListener('click', () => {
+    const text = el.textContent.trim().split('\n')[0];
+    const match = text.match(/(--[\w-]+)/);
+    if (match) {
+      navigator.clipboard.writeText('var(' + match[1] + ')');
+      const orig = el.style.color;
+      el.style.color = '#068332';
+      setTimeout(() => { el.style.color = orig; }, 600);
+    }
+  });
+});
+</script>
+
+</body>
+</html>

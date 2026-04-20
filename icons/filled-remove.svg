@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<mask id="m">
+<circle cx="12" cy="12" r="12" fill="white"/>
+<path d="M7.1 7.205L16.308 17.109" stroke="black" stroke-width="2"/>
+<path d="M7.1 17.005L16.308 7.1" stroke="black" stroke-width="2"/>
+</mask>
+</defs>
+<circle cx="12" cy="12" r="12" fill="#03421C" mask="url(#m)"/>
+</svg>

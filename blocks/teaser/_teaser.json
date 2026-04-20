@@ -1,0 +1,283 @@
+{
+  "definitions": [
+    {
+      "title": "Teaser",
+      "id": "teaser",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Teaser",
+              "model": "teaser",
+              "title": "Teaser Title",
+              "titleType": "h3",
+              "classes": ["default", "video"]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "teaser",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "fileReference",
+          "label": "Image",
+          "description": "The teaser image, min Xpx x Ypx...",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "fileReferenceAlt",
+          "value": "",
+          "label": "Image Description",
+          "description": "A descriptive text of the image will be shown as tooltip."
+        },
+        {
+          "component": "aem-content",
+          "valueType": "string",
+          "name": "uri",
+          "label": "Video"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "eyebrow",
+          "value": "",
+          "label": "Eyebrow",
+          "description": "Sets the small pre-title above the title."
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "value": "",
+          "label": "Heading",
+          "description": "Sets the main title of the teaser."
+        },
+        {
+          "component": "select",
+          "valueType": "string",
+          "name": "titleType",
+          "value": "h2",
+          "label": "Heading Type",
+          "options": [
+            {
+              "name": "H1",
+              "value": "h1"
+            },
+            {
+              "name": "H2",
+              "value": "h2"
+            },
+            {
+              "name": "H3",
+              "value": "h3"
+            },
+            {
+              "name": "H4",
+              "value": "h4"
+            },
+            {
+              "name": "H5",
+              "value": "h5"
+            },
+            {
+              "name": "H6",
+              "value": "h6"
+            }
+          ]
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "longDescr",
+          "value": "",
+          "label": "Long Description",
+          "description": "The description shown in Desktop and Tablet view."
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "shortDescr",
+          "value": "",
+          "label": "Short Description",
+          "description": "The description shown in Mobile view. If not set long text is used."
+        },
+        {
+          "component": "select",
+          "name": "cta1Type",
+          "value": "primary",
+          "label": "First CTA Type",
+          "description": "'Primary' will render button filled, 'Secondary' with an outline.",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Primary",
+              "value": "primary"
+            },
+            {
+              "name": "Secondary",
+              "value": "secondary"
+            },
+            {
+              "name": "Outline",
+              "value": "outline"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta1Text",
+          "value": "",
+          "label": "First CTA Text",
+          "description": "Text to be shown inside button."
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta1",
+          "value": "",
+          "label": "First CTA Link",
+          "description": "What link to open when clicking the button."
+        },
+        {
+          "component": "select",
+          "name": "cta2Type",
+          "value": "primary",
+          "label": "Second CTA Type",
+          "description": "'Primary' will render button filled, 'Secondary' with an outline.",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Primary",
+              "value": "primary"
+            },
+            {
+              "name": "Secondary",
+              "value": "secondary"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta2Text",
+          "value": "",
+          "label": "Second CTA Text",
+          "description": "Text to be shown inside button."
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "cta2",
+          "value": "",
+          "label": "Second CTA Link",
+          "description": "What link to open when clicking the button."
+        },
+        {
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "valueType": "string",
+          "required": true,
+          "maxSize": 5,
+          "options": [
+            {
+              "name": "type",
+              "children": [
+                {
+                  "name": "Default",
+                  "value": "default"
+                },
+                {
+                  "name": "40 60",
+                  "value": "teaser-40-60"
+                },
+                {
+                  "name": "50 50",
+                  "value": "teaser-50-50"
+                },
+                {
+                  "name": "Video Background",
+                  "value": "video-bg"
+                },
+                {
+                  "name": "Mobile Flex Reverse",
+                  "value": "mb-flex-reverse"
+                }
+              ]
+            },
+            {
+              "name": "TextAlignment",
+              "children": [
+                {
+                  "name": "Left",
+                  "value": "text-left"
+                },
+                {
+                  "name": "Right",
+                  "value": "text-right"
+                },
+                {
+                  "name": "Center",
+                  "value": "text-center"
+                },
+                {
+                  "name": "Top",
+                  "value": "text-top"
+                },
+                {
+                  "name": "Bottom",
+                  "value": "text-bottom"
+                }
+              ]
+            },
+            {
+              "name": "Text Background Color",
+              "children": [
+                {
+                  "name": "Spinach",
+                  "value": "background-spinach-green"
+                },
+                {
+                  "name": "Dark Cream",
+                  "value": "background-dark-cream"
+                },
+                {
+                  "name": "Subway Cream",
+                  "value": "background-subway-green"
+                },
+                {
+                  "name": "White",
+                  "value": "background-white"
+                }
+              ]
+            },
+            {
+              "name": "Button Type",
+              "children": [
+                {
+                  "name": "Button Tertiary",
+                  "value": "btn-tertiary"
+                },
+                {
+                  "name": "Mobile Button Full Width",
+                  "value": "cta-mobile-full-width"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

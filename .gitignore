@@ -1,0 +1,18 @@
+.hlx/*
+coverage/*
+logs/*
+node_modules/*
+
+helix-importer-ui
+.DS_Store
+*.bak
+.idea
+
+# Monorepo workaround: symlink to parent .git directory
+# Created automatically by postinstall script for AEM CLI
+.git
+
+# Git symlink for monorepo AEM CLI support
+# This symlink points to the root .git directory and is created by scripts/dev-eds.sh
+# Required because AEM CLI needs .git in the current working directory
+.git

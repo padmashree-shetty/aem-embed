@@ -1,0 +1,44 @@
+.icon-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
+  padding: var(--spacing-5) 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--spacing-3-5);
+}
+
+.social-icons a {
+  line-height: 0;
+}
+
+.social-icons img {
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+}
+
+.store-badges {
+  display: flex;
+  gap: var(--spacing-3);
+  flex-wrap: wrap;
+}
+
+.store-badges img {
+  width: var(--spacing-28);
+  height: auto;
+  background-color: var(--color-neutral-black);
+  border-radius: var(--radius-lg);
+}
+
+@media (width >= 1024px) {
+  .icon-links {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .social-icons {
+    margin-bottom: 0;
+  }
+}

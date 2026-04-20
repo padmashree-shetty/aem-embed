@@ -1,0 +1,295 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+:root {
+  /* colors — mapped to shared design tokens (see tailwind-theme.js) */
+  --background-color: var(--color-neutral-white);
+  --light-color: var(--color-neutral-grey-light);
+  --dark-color: var(--color-neutral-light-spinach);
+  --text-color: var(--color-neutral-black);
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--color-primary-hover);
+
+  /* fonts — mapped to shared font families */
+  --body-font-family: var(--font-sans);
+  --heading-font-family: var(--font-sans-condensed);
+
+  /* body sizes — mobile-first, mapped to shared typography tokens */
+  --body-font-size-m: var(--text-body-lg-size); /* 16px */
+  --body-font-size-s: var(--text-body-md-size); /* 14px */
+  --body-font-size-xs: var(--text-body-sm-size); /* 12px */
+
+  /* heading sizes — mobile-first, mapped to shared heading tokens */
+  --heading-font-size-xxl: var(--text-h1-mobile-size); /* 52px */
+  --heading-font-size-xl: var(--text-h2-mobile-size); /* 40px */
+  --heading-font-size-l: var(--text-h3-mobile-size); /* 32px */
+  --heading-font-size-m: var(--text-h4-mobile-size); /* 20px */
+  --heading-font-size-s: var(--text-h5-mobile-size); /* 22px */
+  --heading-font-size-xs: var(--text-h6-mobile-size); /* 18px */
+
+  /* nav height */
+  --nav-height: 64px;
+}
+
+/* fallback fonts are defined in styles/fonts.css (loaded async by scripts.js) */
+
+@media (width >= 900px) {
+  :root {
+    /* heading sizes — desktop, mapped to shared heading tokens */
+    --heading-font-size-xxl: var(--text-h1-size); /* 72px */
+    --heading-font-size-xl: var(--text-h2-size); /* 64px */
+    --heading-font-size-l: var(--text-h3-size); /* 40px */
+    --heading-font-size-m: var(--text-h4-size); /* 32px */
+    --heading-font-size-s: var(--text-h5-size); /* 24px */
+    --heading-font-size-xs: var(--text-h6-size); /* 20px */
+  }
+}
+
+body {
+  display: none;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  font-size: var(--body-font-size-m);
+  font-weight: var(--text-body-lg-weight);
+  line-height: var(--text-body-lg-line-height);
+  letter-spacing: var(--text-body-lg-spacing);
+}
+
+body.appear {
+  display: block;
+}
+
+header {
+  height: var(--nav-height);
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status='loaded'],
+footer .footer[data-block-status='loaded'] {
+  visibility: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+  font-family: var(--heading-font-family);
+  scroll-margin: 40px;
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: var(--text-h1-weight);
+  line-height: var(--text-h1-line-height);
+  letter-spacing: var(--text-h1-spacing);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: var(--text-h2-weight);
+  line-height: var(--text-h2-line-height);
+  letter-spacing: var(--text-h2-spacing);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: var(--text-h3-weight);
+  line-height: var(--text-h3-line-height);
+  letter-spacing: var(--text-h3-spacing);
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+  font-weight: var(--text-h4-weight);
+  line-height: var(--text-h4-line-height);
+  letter-spacing: var(--text-h4-spacing);
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+  font-weight: var(--text-h5-weight);
+  line-height: var(--text-h5-line-height);
+  letter-spacing: var(--text-h5-spacing);
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+  font-weight: var(--text-h6-weight);
+  line-height: var(--text-h6-line-height);
+  letter-spacing: var(--text-h6-spacing);
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote {
+  margin-top: 0.8em;
+  margin-bottom: 0.25em;
+}
+
+code,
+pre {
+  font-size: var(--body-font-size-s);
+}
+
+pre {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--light-color);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+main > div {
+  margin: 40px 16px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* links */
+a:any-link:not(.btn) {
+  color: var(--link-color);
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+a:hover:not(.btn) {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* buttons — mapped to shared button tokens */
+a.button:any-link,
+button {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 12px 0;
+  border: 2px solid var(--color-btn-filled-rest);
+  border-radius: var(--radius-button);
+  padding: 0.5em 1.2em;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-size: var(--text-cta-size);
+  font-weight: var(--text-cta-weight);
+  line-height: var(--text-cta-line-height);
+  letter-spacing: var(--text-cta-spacing);
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-btn-filled-rest);
+  color: var(--color-btn-filled-text);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a.button:hover,
+a.button:focus,
+button:hover,
+button:focus {
+  background-color: var(--color-btn-filled-hover);
+  border-color: var(--color-btn-filled-hover);
+  cursor: pointer;
+}
+
+a.button:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-btn-focus-ring);
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: var(--light-color);
+  border-color: var(--light-color);
+  color: var(--dark-color);
+  cursor: unset;
+}
+
+a.button.secondary,
+button.secondary {
+  background-color: transparent;
+  border: 2px solid var(--color-btn-outlined-rest);
+  color: var(--color-btn-outlined-text-rest);
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus,
+button.secondary:hover,
+button.secondary:focus {
+  background-color: var(--color-btn-outlined-hover);
+  color: var(--color-btn-outlined-text-hover);
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections */
+main > .section {
+  margin: 40px 0;
+}
+
+main > .section > div {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+main > .section:first-of-type {
+  margin-top: 0;
+}
+
+@media (width >= 900px) {
+  main > .section > div {
+    padding: 0 32px;
+  }
+}
+
+/* section metadata */
+main .section.light,
+main .section.highlight {
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 40px 0;
+}

@@ -1,0 +1,43 @@
+/* Banner Wrapper - The outer container */
+.banner-container .banner-wrapper.highlight {
+  background-color: var(--color-neutral-dark-cream);
+}
+
+/* Banner Block */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-16) var(--spacing-6);
+  max-width: 800px;
+  margin: 0 auto;
+  gap: var(--spacing-1);
+}
+
+/* Heading */
+.banner .banner-heading h1 {
+  margin: var(--spacing-0);
+  line-height: 1.1;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-neutral-black);
+}
+
+/* Description */
+.banner .banner-description {
+  color: var(--color-neutral-dark-grey);
+}
+
+/* CTA Styles */
+.banner .banner-cta .button-container a.btn-primary:any-link,
+.banner .banner-cta .button-container a.btn-primary:hover {
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  text-decoration: none;
+}
+
+.banner .banner-cta .button-container a.cta-primary:any-link,
+.banner .banner-cta .button-container a.cta-primary:hover {
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  text-decoration: none;
+}

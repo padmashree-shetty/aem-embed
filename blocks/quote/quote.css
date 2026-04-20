@@ -1,0 +1,35 @@
+.quote.block {
+  margin: var(--spacing-15);
+
+  .quote-text {
+    font-size: var(--heading-font-size-l);
+    font-weight: var(--text-app-tag-weight);
+    font-family: var(--body-font-family);
+    position: relative;
+    margin: var(--spacing-0);
+    padding-top: var(--spacing-9);
+    line-height: var(--text-app-metadata-line-height);
+
+    &::before {
+      content: '';
+      background-image: url('../../icons/quote-black.svg');
+      position: absolute;
+      top: 0;
+      width: 38px;
+      height: 30px;
+    }
+
+    &::after {
+      content: '”';
+      font-size: var(--heading-font-size-l);
+    }
+  }
+
+  .quote-author {
+    font-size: var(--text-body-lg-size);
+    font-family: var(--font-sans-condensed);
+    margin-top: var(--spacing-4);
+    font-style: normal;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,35 @@
+/**
+ * Tailwind CSS Entry Point for EDS Blocks
+ *
+ * Architecture:
+ * 1. All @import statements (must be first per CSS spec)
+ * 2. Tailwind directives
+ *
+ * The @layer components blocks from imported files are automatically
+ * merged into the @tailwind components layer by Tailwind CSS.
+ *
+ * @see docs/shared-styles/ARCHITECTURE.md
+ */
+
+/* ==========================================================================
+   Imports - Must be at top per CSS specification
+   ========================================================================== */
+
+/* Shared design tokens (CSS variables) */
+@import url('../../../packages/shared-styles/src/base/index.css');
+
+/* Shared component styles (@layer components with @apply) */
+@import url('../../../packages/shared-styles/src/components/buttons.css');
+@import url('../../../packages/shared-styles/src/components/cards.css');
+@import url('../../../packages/shared-styles/src/components/forms.css');
+@import url('../../../packages/shared-styles/src/components/navigation.css');
+@import url('../../../packages/shared-styles/src/components/hero.css');
+
+/* ==========================================================================
+   Tailwind Layers
+   Note: @tailwind base is intentionally omitted — EDS has its own base
+   styles in styles/styles.css. Including it would inject ~40 --tw-*
+   utility variables on *, :before, :after that clutter DevTools.
+   ========================================================================== */
+@tailwind components;
+@tailwind utilities;

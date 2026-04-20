@@ -1,0 +1,5 @@
+mountpoints:
+  /:
+    url: 'https://author-p181621-e1910218.adobeaemcloud.com/bin/franklin.delivery/Subway-Technology/digital-ecomm-eds/main'
+    type: 'markup'
+    suffix: '.html'

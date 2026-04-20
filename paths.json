@@ -1,0 +1,8 @@
+{
+  "mappings": [
+    "/content/digital-ecomm-eds/:/",
+    "/content/digital-ecomm-eds/configuration:/.helix/config.json",
+    "/content/digital-ecomm-eds/metadata:/metadata.json"
+  ],
+  "includes": ["/content/digital-ecomm-eds/"]
+}
